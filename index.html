@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>AJAX</title>
+      <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+      <style>
+        .loader {
+          border: 16px solid #f3f3f3;
+          border-radius: 50%;
+          border-top: 16px solid blue;
+          border-bottom: 16px solid blue;
+          width: 120px;
+          height: 120px;
+          margin:0px auto;
+          -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+        }
+        
+        @-webkit-keyframes spin {
+          0% { -webkit-transform: rotate(0deg); }
+          100% { -webkit-transform: rotate(360deg); }
+        }
+        
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+
+        </style>
+  </head>
+
+  <body>
+    <div id ="content" class="content" style="display: table; margin: 0px auto ;">
+    <table class="users"></table>
+  </div>
+
+
+  <div  id="spiner">
+    <div ></div>
+  </div>
+  
+
+  <div class="post" id ="post">
+  </div>
+  
+      
+    
+    <script src="js/index.js"></script>
+  </body>
+</html>
